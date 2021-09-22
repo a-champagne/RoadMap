@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <fragment
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="@color/colorAccent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:context=".MapsActivity" />
+
+    <!--<android.support.constraint.ConstraintLayout-->
+        <!--android:id="@+id/constraintLayout"-->
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/nav_full"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageButton
+            android:id="@+id/all_vehicles"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="8dp"
+            android:background="@null"
+            android:scaleType="fitCenter"
+            android:src="@drawable/show_all"
+            android:visibility="visible"
+            app:layout_constraintBottom_toTopOf="@+id/messages"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <ImageButton
+            android:id="@+id/messages"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="104dp"
+            android:layout_marginBottom="16dp"
+            android:background="@null"
+            android:scaleType="fitXY"
+
+            android:src="@drawable/message"
+            android:visibility="gone"
+            app:layout_constraintBottom_toTopOf="@+id/navbar"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/maintenance" />
+
+        <ImageButton
+            android:id="@+id/maintenance"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginEnd="76dp"
+            android:layout_marginBottom="16dp"
+            android:background="@null"
+            android:scaleType="fitXY"
+            android:src="@drawable/maintenance"
+            android:visibility="gone"
+            app:layout_constraintBottom_toTopOf="@+id/navbar"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <ImageButton
+            android:id="@+id/create_vehicle"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginEnd="12dp"
+            android:layout_marginBottom="16dp"
+            android:layout_weight="1"
+            android:background="@null"
+            android:scaleType="fitCenter"
+            android:src="@drawable/add_vehicle"
+            android:visibility="gone"
+            app:layout_constraintBottom_toTopOf="@+id/navbar"
+            app:layout_constraintEnd_toStartOf="@+id/create_trip" />
+
+        <ImageButton
+            android:id="@+id/emergency"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="16dp"
+            android:background="@null"
+            android:scaleType="fitXY"
+            android:src="@drawable/emergency"
+            android:visibility="gone"
+            app:layout_constraintBottom_toTopOf="@+id/navbar"
+            app:layout_constraintEnd_toStartOf="@+id/maintenance" />
+
+        <ImageButton
+            android:id="@+id/view_vehicles"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginBottom="8dp"
+            android:layout_weight="1"
+            android:background="@null"
+            android:scaleType="fitCenter"
+            android:src="@drawable/show_vehicles"
+            android:visibility="gone"
+            app:layout_constraintBottom_toTopOf="@+id/navbar"
+            app:layout_constraintStart_toEndOf="@+id/view_trips" />
+
+        <ImageButton
+            android:id="@+id/create_trip"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginEnd="84dp"
+            android:layout_marginBottom="16dp"
+            android:layout_weight="1"
+            android:background="@null"
+            android:scaleType="fitCenter"
+            android:src="@drawable/add_trip"
+            android:visibility="gone"
+            app:layout_constraintBottom_toTopOf="@+id/navbar"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <ImageButton
+            android:id="@+id/view_trips"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginBottom="8dp"
+            android:layout_weight="1"
+            android:background="@null"
+            android:cropToPadding="false"
+            android:scaleType="fitCenter"
+            android:src="@drawable/view_trips"
+            android:visibility="gone"
+            app:layout_constraintBottom_toTopOf="@+id/navbar"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <LinearLayout
+            android:id="@+id/navbar"
+
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:background="@color/darkGrey"
+            android:gravity="center"
+            android:orientation="horizontal"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent">
+
+            <ImageButton
+                android:id="@+id/view"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_weight="1"
+                android:background="@null"
+                android:cropToPadding="false"
+                android:scaleType="fitCenter"
+                android:src="@drawable/list"
+                tools:layout_editor_absoluteX="107dp"
+                tools:layout_editor_absoluteY="534dp" />
+
+            <ImageButton
+                android:id="@+id/map_btn"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_weight="1"
+                android:background="@null"
+                android:cropToPadding="false"
+                android:scaleType="fitCenter"
+                android:src="@drawable/map"
+                tools:layout_editor_absoluteX="107dp"
+                tools:layout_editor_absoluteY="534dp" />
+
+            <ImageButton
+                android:id="@+id/add"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_weight="1"
+                android:background="@null"
+                android:scaleType="fitCenter"
+                android:src="@drawable/add" />
+
+            <ImageButton
+                android:id="@+id/communicate"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_weight="1"
+                android:background="@null"
+                android:cropToPadding="false"
+                android:scaleType="fitCenter"
+                android:src="@drawable/communicate"
+                tools:layout_editor_absoluteX="107dp"
+                tools:layout_editor_absoluteY="534dp" />
+
+            <!--</android.support.constraint.ConstraintLayout>-->
+        </LinearLayout>
+    </android.support.constraint.ConstraintLayout>
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/info_card"
+        android:layout_width="411dp"
+        android:layout_height="wrap_content"
+        app:cardBackgroundColor="@color/darkGrey"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/info_window"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="32dp"
+                android:layout_marginBottom="8dp"
+                android:textColor="@color/lightGrey"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.48000002" />
+        </android.support.constraint.ConstraintLayout>
+    </android.support.v7.widget.CardView>
+
+    <ImageButton
+        android:id="@+id/signout"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginEnd="8dp"
+        android:background="@null"
+        android:scaleType="fitXY"
+        android:src="@drawable/signout"
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/info_card" />
+
+</android.support.constraint.ConstraintLayout>

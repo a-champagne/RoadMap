@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="300dp"
+    android:layout_height="300sp"
+    android:background="@color/common_google_signin_btn_text_light_focused">
+
+
+    <TextView
+        android:id="@+id/selectTripsTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Select a trip to begin"
+        android:textColor="@color/common_google_signin_btn_text_dark_pressed"
+        android:textSize="18sp" />
+
+    <ListView
+        android:id="@+id/tripsList"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/noTripsText"
+        android:layout_below="@id/selectTripsTitle"
+        android:background="@color/common_google_signin_btn_text_light_focused"
+        tools:background="@android:drawable/alert_light_frame">
+
+    </ListView>
+
+    <TextView
+        android:id="@+id/noTripsText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:gravity="center"
+        android:text="No trips assigned"
+        android:textColor="@color/common_google_signin_btn_text_dark_pressed"
+        android:textSize="16sp" />
+
+</RelativeLayout>

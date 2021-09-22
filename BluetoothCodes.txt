@@ -1,0 +1,39 @@
+//All messages sent over BT will have to be prefixed
+//with the purpose of the message. To do this, we will
+//use the following value.
+
+//eg: To send location data, a message could potentially be:
+//    {1, <latitude>, <longitude>}
+
+//Please update this document as needed to ensure coherence 
+//between the phone app and the Pi
+
+/* - Not being used anymore since switching to JSON
+	BT_EMERGENCY(0),
+	BT_LOCATION_DATA(1),
+	BT_ROUTE_DATA(2),
+	BT_ZONE_VIOLATION(3),
+	BT_MESSAGE(4),
+	BT_MAINTENANCE(5),
+	BT_CHANGE_VEHICLE(6);
+*/
+
+//Some JSON Keys and Events
+
+        String KEY_EVENT_TYPE = "KEY_EVENT_TYPE";
+
+        String EVENT_LOCATION_UPDATE = "EVENT_LOCATION_UPDATE";
+		String EVENT_EMERGENCY = "EVENT_EMERGENCY";
+        String EVENT_ROUTE_DATA = "EVENT_ROUTE_DATA";
+        String EVENT_ZONE_VIOLATION = "EVENT_ZONE_VIOLATION";
+        String EVENT_MESSAGE = "EVENT_MESSAGE";
+        String EVENT_MAINTENANCE = "EVENT_MAINTENANCE";
+        String EVENT_CHANGE_VEHICLE = "EVENT_CHANGE_VEHICLE";
+		
+        String EVENT_CONNECTION_ESTABLISHED = "EVENT_CONNECTION_ESTABLISHED";
+        String EVENT_DISCOVERY_BEGINNING = "EVENT_DISCOVERY_BEGINNING";
+        String EVENT_CONNECTION_DISCONNECTED = "EVENT_CONNECTION_DISCONNECTED";
+        String EVENT_BEGIN_TRIP = "EVENT_BEGIN_TRIP";
+
+        String KEY_LATITUDE = "KEY_LATITUDE";
+        String KEY_LONGITUDE = "KEY_LONGITUDE";

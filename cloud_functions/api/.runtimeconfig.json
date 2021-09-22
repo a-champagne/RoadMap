@@ -1,0 +1,8 @@
+{
+  "firebase": {
+    "projectId": "cpen391-test",
+    "databaseURL": "https://cpen391-test.firebaseio.com",
+    "storageBucket": "cpen391-test.appspot.com",
+    "cloudResourceLocation": "us-central"
+  }
+}

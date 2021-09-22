@@ -1,0 +1,9 @@
+{
+  "name": "sample-firebase-db",
+  "dependencies": {
+  	"nodemailer":"^6.0.0",
+    "firebase-admin": "~7.0.0",
+    "firebase-functions": "^2.2.0"
+  },
+  "version": "0.0.1"
+}

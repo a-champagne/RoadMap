@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "265800625680",
+    "firebase_url": "https://cpen391-test.firebaseio.com",
+    "project_id": "cpen391-test",
+    "storage_bucket": "cpen391-test.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:265800625680:android:a920c0f3686e9e56",
+        "android_client_info": {
+          "package_name": "ca.ubc.zachrivard.self.test.roadmap"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "265800625680-1cisueqik6dt3dmlqh5gji53rcsfjh3j.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD_OIPVHvTbjg9DgGxn5CGQuGMc52eGrnA"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

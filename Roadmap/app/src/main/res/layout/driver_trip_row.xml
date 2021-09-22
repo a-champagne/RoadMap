@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/tripTitle"
+        android:text="Trip Title"
+        android:textColor="@color/quantum_white_100"
+        android:textSize="17sp"
+        android:padding="5dp"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/originTitle"
+        android:layout_below="@id/tripTitle"
+        android:text="Origin"
+        android:textColor="@color/quantum_white_100"
+        android:textSize="16sp"
+        android:padding="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/destinationTitle"
+        android:layout_below="@id/originTitle"
+        android:text="Desination"
+        android:textColor="@color/quantum_white_100"
+        android:textSize="16sp"
+        android:padding="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+</RelativeLayout>

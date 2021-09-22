@@ -1,0 +1,65 @@
+/* This is the JSON layout for the data sent from the phone to the Raspberry Pi */ 
+
+[
+{
+"REQUEST_TYPE":"BT_CONNECTED",
+"DATA": { "DriverID": <DriverID> }
+},
+
+{ 
+"REQUEST_TYPE":"BT_EMERGENCY",
+"DATA": 
+		{ 		<TripID>: 
+						{	"Message": <message text>,
+							"TimeStamp": <int>,
+							"Vehicle_ID": <Vehicle ID>,
+							"DriverID": <Driver ID>,
+							"ReadStatus": boolean
+		}
+},
+
+{
+"REQUEST_TYPE":"BT_MESSAGE",
+"DATA": 
+		{	"TripID":<TripID>,
+			"Messages":{ <MessageID> :
+						{	"DriverID": <DriverID>,
+							"Message_Data": <message text>,
+							"ReadStatus": <boolean>,
+							"TimeStamp": <int>
+						}
+				
+		}
+},	
+
+{
+"REQUEST_TYPE":"BT_MAINTENANCE",
+"DATA":
+		{	"VehicleID":<VehicleID>,
+			"ID": { <maintenanceID> :
+						{	"DriverID": <driverID>,
+							"Message": <string>,
+							"ReadStatus": <boolean>,
+							"Status": <open/closed>,
+							"TimeStamp": <int>,
+							"TripID": <TripID>
+						}
+
+				}
+		}
+},
+{
+"REQUEST_TYPE":"BT_CHOOSETRIP",
+"DATA": 
+		{ "Trip": <TripID>, "DriverID":<DriverID>, "Timestamp": <int> }
+},		
+					
+
+{
+"REQUEST_TYPE":"BT_LOCATION_DATA", 
+"DATA":	<null>		
+
+},
+
+			
+						
