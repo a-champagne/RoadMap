@@ -28,4 +28,4 @@ For many companies, owning and operating a fleet of vehicles is a major capital 
 * Communicates with the driver's mobile app via Bluetooth to allow access to the system 
 * Calculates zone violations and adds them to the database
 
-![What does Roadmap do](/graphics/What does roadmap do.png)
+![What does Roadmap do](/graphics/What_does_roadmap_do.png)
