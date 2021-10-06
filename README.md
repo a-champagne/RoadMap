@@ -4,19 +4,19 @@ For many companies, owning and operating a fleet of vehicles is a major capital 
 
 ### What Does RoadMap Do? ###
 
-* Allows Dispatcher to plan trips based on vehicle availability and location
+* Allows Manager to plan trips based on vehicle availability and location
 * Routes are plotted and approved driving zones are set based on trip start and end points
-* Facilitates communication between drivers and dispatchers
+* Facilitates communication between drivers and Managers
 * Streamlines vehicle maintenance requests
 
 ### System Features ###
 
-* Dual account types (Dispatcher and Driver)
-* Instant messaging between Dispatchers and Drivers
+* Dual account types (Manager and Driver)
+* Instant messaging between Managers and Drivers
 * Vehicle maintenance and emergency notifications
 * Approved driving zone violation emails
 * GPS tracking device that logs vehicle location data to the cloud when the vehicle is operational
-* Allows dispatchers to create routes and approved driving zones with the Google Maps API
+* Allows Managers to create routes and approved driving zones with the Google Maps API
 * Selectable real-time vehicle information (Origin/Destination, trip status, driver name/ID#, vehicle speed/location)
 
 
