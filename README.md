@@ -29,3 +29,12 @@ For many companies, owning and operating a fleet of vehicles is a major capital 
 * Calculates zone violations and adds them to the database
 
 ![What does Roadmap do](graphics/What_does_roadmap_do.jpg)
+![Roadmap components](graphics/Roadmap components.jpg)
+![What does Roadmap do](graphics/What_does_roadmap_do.jpg)
+![What does Roadmap do](graphics/What_does_roadmap_do.jpg)
+![What does Roadmap do](graphics/What_does_roadmap_do.jpg)
+![What does Roadmap do](graphics/What_does_roadmap_do.jpg)
+![What does Roadmap do](graphics/What_does_roadmap_do.jpg)
+![What does Roadmap do](graphics/What_does_roadmap_do.jpg)
+![What does Roadmap do](graphics/What_does_roadmap_do.jpg)
+![What does Roadmap do](graphics/What_does_roadmap_do.jpg)
