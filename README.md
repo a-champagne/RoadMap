@@ -4,7 +4,7 @@ For many companies, owning and operating a fleet of vehicles is a major capital 
 
 ### What Does RoadMap Do? ###
 
-* Allows Manager to plan trips based on vehicle availability and location
+* Allows a Manager to plan trips based on vehicle availability and location
 * Routes are plotted and approved driving zones are set based on trip start and end points
 * Facilitates communication between drivers and Managers
 * Streamlines vehicle maintenance requests
